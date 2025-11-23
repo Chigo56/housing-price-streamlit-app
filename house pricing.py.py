@@ -278,6 +278,3 @@ print("Streamlit app saved as 'app.py'")
 
 !nohup streamlit run app.py --server.port 8501 --server.address 0.0.0.0 >/dev/null 2>&1 &
 
-from google.colab.output import eval_js
-print("App is running... generating link...")
-print(eval_js("google.colab.kernel.proxyPort(8501)"))
